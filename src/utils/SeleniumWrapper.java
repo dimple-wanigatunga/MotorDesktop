@@ -3,7 +3,6 @@ package utils;
 import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
-
 import org.apache.commons.exec.OS;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,7 +24,7 @@ public class SeleniumWrapper{
 	public static WebDriver webDriver = null;
 	
 	
-	public static WebDriver getInstance(String browserType) {
+public static WebDriver getInstance(String browserType) {
 		
 		DesiredCapabilities capability = new DesiredCapabilities();		
 		//String browserName = browserType;
@@ -189,7 +188,9 @@ public static void  waitElementDisappear(WebDriver driver,By locator){
 	
 }
 
-	
+public static void closeBrowser(WebDriver driver){
+	driver.quit();
+}
 	//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
 /*

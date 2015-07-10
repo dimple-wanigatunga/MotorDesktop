@@ -24,6 +24,7 @@ public interface GlobalConstants {
 	
 	public static final By TYPE_OF_INSURANCE= By.xpath("//*[contains(@id,'lbl_business_type_P')]/div");
 	public static final By COMPREHENSIVE = By.xpath("//*[@id='lbl_cover_type_c']");
+	public static final By TPFT = By.xpath("//*[contains(text(),'3rd Party Fire & Theft')]");
 	public static final By ABOUT_THE_CAR_BUTTON = By.xpath("//*[@id='ctl00_next']");
 	
 	//About the Car Page - Search Vehicle
@@ -116,6 +117,61 @@ public interface GlobalConstants {
 	//Car Details Page
 	
 	public static final By ODOMETER_READING = By.id("ctl00_Main_txtLowKMReading");
-	public static final By SELECTED_ACCESSORIES_DROPBOX = By.id("ctl00_Main_hdn_selected_accessories");
-	public static final By ACCESSORY = By.xpath("//li[contains(text(),'Air Bag')] ");
+	public static final By SELECTED_ACCESSORIES_DROPBOX = By.xpath("//ul[@class='chosen-choices']");
+	public static final By ACCESSORY_1 = By.xpath("//li[contains(text(),'Car Bra')]");
+	public static final By MODIFICATION_1 = By.xpath("//li[contains(text(),'Body Kit')]");
+	public static final By EXISTING_RUST_NO = By.xpath("//*[@id='lbl_car_damage_N']");
+	public static final By ROAD_WORTHY_YES = By.xpath("//*[@id='lbl_car_roadworthy_Y']");
+	public static final By FINANCIER_DROPDOWN = By.xpath("//*[@id='ctl00_Main_ddl_financier_chosen']/a");
+	public static final By FINANCIER = By.xpath("//li[contains(text(),'ANZ Banking Group')]");
+	public static final By FINANCIER_EDIT_BUTTON = By.id("ctl00_Main_btn_financier_edit");
+	public static final By NEXT_OWNERS_DRIVERS_BUTTON = By.id("ctl00_next");
+	
+	//  Owner and Driver History
+	
+	public static final By OWNER1_FIRST_NAME = By.id("ctl00_Main_rpt_owners_ctl00_first_name");
+	public static final By OWNER1_LAST_NAME = By.id("ctl00_Main_rpt_owners_ctl00_last_name");
+	public static final By OWNER1_CUSTOMER_NUMBER = By.id("ctl00_Main_rpt_owners_ctl00_member_number");
+	public static final By OWNER1_CONTACT_NUMBER = By.id("ctl00_Main_rpt_owners_ctl00_contact_number");
+	public static final By OWNER1_EMAIL_ADDRESS = By.id("ctl00_Main_rpt_owners_ctl00_email");
+	
+	public static final By ADDRESS_LINE1 = By.id("ctl00_Main_txt_address_1");
+	public static final By ADDRESS_LINE2 = By.id("ctl00_Main_txt_address_2");
+	public static final By ADDRESS_SUBURB = By.id("ctl00_Main_TextBoxSuburb");
+	public static final By ADDRESS_STATE_DROPDOWN = By.xpath("//*[@id='ctl00_Main_ddl_address_state_chosen']/a");
+	public static final By ADDRESS_STATE = By.xpath("//*[@id='ctl00_Main_ddl_address_state_chosen']//li[contains(text(),'NSW')]");
+	public static final By ADDRESS_POSTCODE = By.id("ctl00_Main_txt_postcode");
+	
+	public static final By YOUNG_DRIVER_FIRST_NAME = By.id("ctl00_Main_rpt_drivers_ctl00_first_name");
+	public static final By YOUNG_DRIVER_LAST_NAME = By.id("ctl00_Main_rpt_drivers_ctl00_last_name");
+	
+	public static final By CONVICTION_Q1_OPTION_NO = By.id("lbl_q1_N");
+	public static final By CONVICTION_Q2_OPTION_NO = By.xpath("//*[@id='Label2']/div");
+	public static final By CONVICTION_Q3_OPTION_NO = By.id("lbl_q3_N");
+	public static final By CONVICTION_Q4_OPTION_NO = By.xpath("//*[@id='Label4']/div");
+	
+	public static final By DECL_PRIVACY_NEXT_BUTTON = By.xpath("(//*[contains(text(),'Declaration')])[2]");
+
+	//Declaration And Privacy
+	public static final By DUTY_DICLOSURE_READ_YES  = By.id("lbl_duty_disclosure_read_Y");
+	public static final By DECLARATION_Q1  = By.xpath("//*[@id='ctl00_div_main']/div[1]/div[1]/div/div/div/div[3]/div[1]/div[2]/div/div/label[1]");//By.xpath("(//*[@class='iCheck-helper'])[3]");
+	public static final By DECLARATION_Q2 = By.xpath("//*[@id='ctl00_div_main']/div[1]/div[1]/div/div/div/div[3]/div[3]/div[2]/div/div/label[1]");
+	public static final By PRIVACY_Q1 = By.xpath("//*[@id='ctl00_div_main']/div[1]/div[1]/div/div/div/div[5]/div[1]/div[2]/div/div/label[1]");
+	public static final By PRIVACY_Q2 = By.xpath("//*[@id='ctl00_div_main']/div[1]/div[1]/div/div/div/div[5]/div[3]/div[2]/div/div/label[1]");
+	public static final By  PDS_YES = By.xpath("//*[@id='ctl00_div_main']/div[1]/div[1]/div/div/div/div[7]/div[1]/div[2]/div/div/label[1]");
+	public static final By NEXT_PAYMENT_BUTTON = By.xpath("//*[@id='ctl00_next']");
+	
+	//Payment page
+	public static final By DIRECT_DEBIT_OPTION = By.xpath("//*[@id='ctl00_div_main']/div[1]/div/div[3]/div/div[1]/label[1]");
+	public static final By ACC_HOLDER_NAME = By.xpath("//*[@id='ctl00_Main_account_name']");
+	public static final By ACC_BSB_NUMBER = By.xpath("//*[@id='ctl00_Main_bsb_number']");
+	public static final By ACC_NUMBER = By.xpath("//*[@id='ctl00_Main_account_number']");
+	public static final By PURCHASE_POLICY_BUTTON = By.xpath("//*[@id='ctl00_next']");
+	
+	//Thank You Page
+	public static final By EMAIL_POL_SCHEDULE = By.xpath("//a[@id='ctl00_Main_HyperLink2']");
+	public static final By EMAIL_DOCS = By.xpath("//*[@id='email0']");
+	public static final By SEND_BUTTON = By.xpath("//*[contains(text(),'Send')]");
+	public static final By OK_BUTTON = By.xpath("//*[contains(text(),'OK')]");
+
 }
